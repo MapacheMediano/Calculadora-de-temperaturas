@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Conversor de Grados</h1>
+    <div class="card">
+      <label for="valor" class="label">Ingresa el valor:</label>
+      <input type="number" [(ngModel)]="valor" id="valor" class="input" placeholder="Ej. 0">
+  
+      <label for="conversion" class="label">Elige la conversión:</label>
+      <select [(ngModel)]="conversion" id="conversion" class="select">
+        <option value="CtoF">°C a °F</option>
+        <option value="CtoK">°C a K</option>
+        <option value="FtoC">°F a °C</option>
+        <option value="FtoK">°F a K</option>
+        <option value="KtoC">K a °C</option>
+        <option value="KtoF">K a °F</option>
+      </select>
+  
+      <button (click)="calcular()" class="button">Convertir</button>
+      <h2 class="result">Resultado: {{ resultado }}</h2>
+    </div>
+  </div>
+  
