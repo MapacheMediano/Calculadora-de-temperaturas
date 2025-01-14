@@ -15,6 +15,15 @@ export class ConversorComponent {
   resultado: string = ''; // Resultado de la conversión
 
   calcular(): void {
+    // Selecciona el elemento del resultado
+    const elemento = document.querySelector('.result') as HTMLElement;
+    if (elemento) {
+      elemento.classList.remove('fade-in'); // Elimina la clase de animación si existe
+      void elemento.offsetWidth; // Fuerza un reflow para reiniciar la animación
+      elemento.classList.add('fade-in'); // Vuelve a agregar la clase
+    }
+  
+    // Realiza la conversión según el tipo seleccionado
     switch (this.conversion) {
       case 'CtoF': // °C a °F
         this.resultado = `${(this.valor * 9/5) + 32} °F`;
@@ -37,5 +46,4 @@ export class ConversorComponent {
       default:
         this.resultado = 'Conversión no válida';
     }
-  }
-}
+  }}

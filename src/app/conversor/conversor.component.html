@@ -1,5 +1,6 @@
 <div class="container">
-    <h1>Conversor de Grados</h1>
+    <h1>🌡️ Conversor de Grados</h1>
+    <p>Bienvenido a la calculadora de Temperaturas</p>
     <div class="card">
       <label for="valor" class="label">Ingresa el valor:</label>
       <input type="number" [(ngModel)]="valor" id="valor" class="input" placeholder="Ej. 0">
@@ -15,7 +16,11 @@
       </select>
   
       <button (click)="calcular()" class="button">Convertir</button>
-      <h2 class="result">Resultado: {{ resultado }}</h2>
+      <p class="result fade-in" *ngIf="resultado">Resultado: {{ resultado }}</p>
+      <footer>
+        Desarrollado por <span>Kevin Joel Díaz Franco 🌟</span>
+      </footer>
+      <!-- <h2 class="result">Resultado: {{ resultado }}</h2> -->
     </div>
   </div>
   

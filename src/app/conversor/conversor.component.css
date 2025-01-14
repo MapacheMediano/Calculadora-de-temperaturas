@@ -1,0 +1,99 @@
+body {
+    background: #f5f5f5;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(3, 160, 250);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.5);
+  }
+
+
+  p {
+    margin: 5px 0 20px;
+    color: #666;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  button {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+    transform: scale(1.05);
+  }
+
+  .resultado {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  img {
+    width: 50px; 
+    margin-bottom: 20px;
+  }
+  /* Animación de desvanecimiento */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-10px); /* Inicia un poco más arriba */
+    animation: fadeIn 0.5s ease forwards; /* Aparece suavemente */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Llega a su posición original */
+    }
+  }
